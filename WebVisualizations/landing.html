@@ -47,58 +47,63 @@
         </div>
     </nav>
 
-
-<div class="jumbotron">
+<div class="w3-container"">
+<div class="row">
+<div class="col" style="float: left; margin-right: auto; width: 60%;">
+<div class="jumbotron" align="left" >
     <h1>Summary: Latitude vs. X</h1>
     <hr>
     <div>
-        <label for="image">Image</label>
-        <input type="figure" id="image" name="figure">
+        <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="50%" style="float: left; margin-right: 0.5rem;">
     </div>
 
     <p style="width: auto;">
-        The purpose of this project was to analyze how weather changes as you get closer tot he equator. 
-        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 citites.
+        The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
         <br> <br>
         
         After assembling the dataset, we used Matplotlib to plot vaious aspects of the weather vs. latitude. Factors we looked at included:
         temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, 
         as well as explanations and descriptions of any trends and correlations witnessed.
     </p>
-
 </div>
-
-<!-- <div class="card border-primary mb-3" >
-    <h1>Visualizations</h1>
-        <subfigure style="width: 10rem">
-            <h2>vs. Cloudiness</h2>
-                <a target="_blank" href="cloud.html">
-                <img src="assets/images/cloudiness.png" alt="Cloudy Map">
-              </a>
-              </subfigure>
-              
-              <subfigure>
-                <h2>vs. Humidity</h2>
-                <a target="_blank" href="humid.html">
-                <img src="assets/images/humidity.png" alt="Humidity Map">
-                </a>
-              </subfigure>
-      
-              
-              <subfigure style="width: 25%">
-                  <h2>vs. Max Temperature</h2>
+</div>
+<div class="col">
+<div class="jumbotron">
+        <h1>Visualizations</h1>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
                 <a href="temp.html">
-                <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map">
+                    <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="100%">
                 </a>
-              </subfigure>
-             
-              <subfigure>
-                  <h2>vs. Wind Speed</h2>
-                <a target="_blank" href="wind.html">
-                <img src="assets/images/wind.png" alt="Wind Map">
+                </div>        
+                
+                <div class="col">
+                <a target="_blank" href="humid.html">
+                    <img src="assets/images/humidity.png" alt="Humidity Map" width="100%">
                 </a>
-              </subfigure>
-</div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <a target="_blank" href="cloud.html">
+                       <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="100%">
+                  </a>
+                </div>
 
+                <div class="col">
+                  <a target="_blank" href="wind.html">
+                  <img src="assets/images/wind.png" alt="Wind Map" width="100%">
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 </body>
 </html>
