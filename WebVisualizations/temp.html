@@ -4,20 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
     <title>WeatherPy</title>
 </head>
 <div 
 
 <body>
-    <section>
-        <h1>Comparison: Latitude vs X</h1>
-        <h2>vs. Max Temperature</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button type="button" class="btn btn-primary btn-lg">
+      <a class="navbar-brand" href="landing.html">Lattitude</a>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+      
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humid.html">Humidity</a>
+            <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+          </div>
+        </li>  
+
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data</a>
+        </li>
+      </ul>
+  </nav>
+    <div class="jumbotron">
+        <h1>Max Temperature</h1>
+        <hr class="my-4">
         <figure>
           <a href="assets/images/temp.png">
           <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map">
           </a>
         </figure>
-
-    </section>    
+    </div>>
+  
 </body>
 </html>
