@@ -53,9 +53,34 @@
 <div class="jumbotron" align="left" >
     <h1>Summary: Latitude vs. X</h1>
     <hr>
-    <div>
-        <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="50%" style="float: left; margin-right: 0.5rem;">
+    <div class="w3-content w3-display-container">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="float: left;">&#10094;</button>      
+        <img class="mySlides" src="assets/images/temp.png" alt="Tempurature Map" width="40%" style="float: left; margin-right: 0.5rem;">
+        <img class="mySlides" src="assets/images/humidity.png" alt="Humidity Map" width="40%" style="float: left; margin-right: 0.5rem;">
+        <img class="mySlides" src="assets/images/cloudiness.png" alt="Cloudiness Map" width="40%" style="float: left; margin-right: 0.5rem;">
+        <img class="mySlides" src="assets/images/wind.png" alt="Wind Map" width="40%" style="float: left; margin-right: 0.5rem;">
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
+    <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+    </script>
+            
 
     <p style="width: auto;">
         The purpose of this project was to analyze how weather changes as you get closer to the equator. 
@@ -76,13 +101,13 @@
             <div class="row">
                 <div class="col">
                 <a href="temp.html">
-                    <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="100%">
+                    <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="80%">
                 </a>
                 </div>        
                 
                 <div class="col">
                 <a target="_blank" href="humid.html">
-                    <img src="assets/images/humidity.png" alt="Humidity Map" width="100%">
+                    <img src="assets/images/humidity.png" alt="Humidity Map" width="80%">
                 </a>
                 </div>
             </div>
@@ -90,13 +115,13 @@
             <div class="row">
                 <div class="col">
                     <a target="_blank" href="cloud.html">
-                       <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="100%">
+                       <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="80%">
                   </a>
                 </div>
 
                 <div class="col">
                   <a target="_blank" href="wind.html">
-                  <img src="assets/images/wind.png" alt="Wind Map" width="100%">
+                  <img src="assets/images/wind.png" alt="Wind Map" width="80%">
                   </a>
                 </div>
             </div>

@@ -5082,6 +5082,16 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
 .card {
   position: relative;
   display: -webkit-box;
