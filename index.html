@@ -49,18 +49,19 @@
 
 <div class="w3-container"">
 <div class="row">
-<div class="col" style="float: left; margin-right: auto; width: 60%;">
-<div class="jumbotron" align="left" >
+<div class="col-8" style=" width=500px">
+<div class="jumbotron" align="left" style="overflow: auto;">
     <h1>Summary: Latitude vs. X</h1>
     <hr>
     <div class="w3-content w3-display-container">
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="float: left;">&#10094;</button>      
-        <img class="mySlides" src="assets/images/temp.png" alt="Tempurature Map" width="40%" style="float: left; margin-right: 0.5rem;">
-        <img class="mySlides" src="assets/images/humidity.png" alt="Humidity Map" width="40%" style="float: left; margin-right: 0.5rem;">
-        <img class="mySlides" src="assets/images/cloudiness.png" alt="Cloudiness Map" width="40%" style="float: left; margin-right: 0.5rem;">
-        <img class="mySlides" src="assets/images/wind.png" alt="Wind Map" width="40%" style="float: left; margin-right: 0.5rem;">
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="float: left;">&#10094;</button> 
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" style="">&#10095;</button> 
+        <img class="mySlides" src="assets/images/temp.png" alt="Tempurature Map" width="40%" style="float: left; margin-right: 1rem;">
+        <img class="mySlides" src="assets/images/humidity.png" alt="Humidity Map" width="40%" style="float: left; margin-right:1rem;">
+        <img class="mySlides" src="assets/images/cloudiness.png" alt="Cloudiness Map" width="40%" style="float: left; margin-right: 1rem;">
+        <img class="mySlides" src="assets/images/wind.png" alt="Wind Map" width="40%" style="float: left; margin-right: 1rem;">           
     </div>
+
     <script>
             var slideIndex = 1;
             showDivs(slideIndex);
@@ -80,12 +81,12 @@
               x[slideIndex-1].style.display = "block";  
             }
     </script>
-            
 
-    <p style="width: auto;">
+    <p>
         The purpose of this project was to analyze how weather changes as you get closer to the equator. 
         To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-        <br> <br>
+        <br> 
+        <br>
         
         After assembling the dataset, we used Matplotlib to plot vaious aspects of the weather vs. latitude. Factors we looked at included:
         temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, 
@@ -101,13 +102,13 @@
             <div class="row">
                 <div class="col">
                 <a href="temp.html">
-                    <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="80%">
+                    <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="200px">
                 </a>
                 </div>        
                 
                 <div class="col">
                 <a target="_blank" href="humid.html">
-                    <img src="assets/images/humidity.png" alt="Humidity Map" width="80%">
+                    <img src="assets/images/humidity.png" alt="Humidity Map" width="200px">
                 </a>
                 </div>
             </div>
@@ -115,13 +116,13 @@
             <div class="row">
                 <div class="col">
                     <a target="_blank" href="cloud.html">
-                       <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="80%">
+                       <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="200px">
                   </a>
                 </div>
 
                 <div class="col">
                   <a target="_blank" href="wind.html">
-                  <img src="assets/images/wind.png" alt="Wind Map" width="80%">
+                  <img src="assets/images/wind.png" alt="Wind Map" width="200px">
                   </a>
                 </div>
             </div>
@@ -130,5 +131,6 @@
 </div>
 </div>
 </div>
+
 </body>
 </html>
