@@ -12,14 +12,18 @@
 
     <link rel="stylesheet" href="bootstrap.css">
 
-    <title>WeatherPy</title>
+    <title>Humid</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <button type="button" class="btn btn-primary btn-lg">
-          <a class="navbar-brand" href="index.html">Latitude</a>
-        </button>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="btn btn-primary btn-lg">
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                  </button>
+            </div>
+        
                 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
@@ -43,69 +47,65 @@
                 <a class="nav-link" href="weather.html">Data</a>
             </li>
             </ul>
+        </div>
     </nav>
 
-
     <div class="container-fluid">
-      <div class="row">
-      <div class="col-lg-8">
-
+    <div class="row">
+    <div class="col-lg-8">
     <div class="jumbotron">
-        <h1>Cloudiness</h1>
-        <hr class="my-4">
-
+        <h1>Test Page</h1>
+        <hr>
+        
         <figure>
-        <a target="_blank" href="assets/images/cloudiness.png">
-          <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="60%">
-        </a>
+          <a target="_blank" href="#">
+          <img src="assets/images/humidity.png" alt="Humidity Map" width="60%">
+          </a>
         </figure>
 
-        <p>
-          According to our dataset, there does not seem to be a correlation between cloudiness and latitude. 
-          However, there seems to be clustering around 100% cloudiness and 0% cloudiness, indicating that the cities are either not cloudy at all or completely cloudy at this time of year. 
-          This could be due to measurement criteria (definition of cloudiness).
+        <p>According to our dataset, humidity does not seem to be strongly correlated with Latitude. 
+            At this time of year, the humidity in general is high (the majority of cities exhibit over 60% humidity).
+            There could be a weak correlation between latitude and humidity such that it is more humid around the equator and around the North Pole, but such correlation needs to be further tested.
         </p>
     </div>
-            
-  </div>
+    </div>
 
-    <div class="col-lg-4">
-        <div class="jumbotron">
-            <h1>Visualizations</h1>
-            <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                    <a href="temp.html">
-                        <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="220px">
-                    </a>
-                    </div>        
+    <div class="col">
+            <div class="jumbotron">
+                <h1>Visualizations</h1>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                        <a href="temp.html">
+                            <img target="_blank" src="assets/images/temp.png" alt="Tempurature Map" width="200px">
+                        </a>
+                        </div>        
+                        
+                        <div class="col">
+                        <a target="_blank" href="humid.html">
+                            <img src="assets/images/humidity.png" alt="Humidity Map" width="200px" style="border: 2px solid #007bff;">
+                        </a>
+                        </div>
+                    </div>
                     
-                    <div class="col">
-                    <a target="_blank" href="humid.html">
-                        <img src="assets/images/humidity.png" alt="Humidity Map" width="220px">
-                    </a>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col">
-                        <a target="_blank" href="cloud.html">
-                           <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="220px" style="border: 2px solid #007bff;">
-                      </a>
-                    </div>
-    
-                    <div class="col">
-                      <a target="_blank" href="wind.html">
-                      <img src="assets/images/wind.png" alt="Wind Map" width="220px" >
-                      </a>
+                    <div class="row">
+                        <div class="col">
+                            <a target="_blank" href="cloud.html">
+                               <img src="assets/images/cloudiness.png" alt="Cloudy Map" width="200px" >
+                          </a>
+                        </div>
+        
+                        <div class="col">
+                          <a target="_blank" href="wind.html">
+                          <img src="assets/images/wind.png" alt="Wind Map" width="200px" >
+                          </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </div>
-    </div>
-</div>
-
 </body>
 </html>
